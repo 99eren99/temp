@@ -35,7 +35,7 @@ for document in cursor:
         for element in document["metinGovde"]:
             if len(element)==2:#resim demektir
                 resimURL=element["resim"]
-                if resimURL[0]=="h":#url ise
+                if resimURL is not None and resimURL[0]=="h":#url ise
                     path="./"+("/").join(resimURL.split("/")[3:])
                     element["resim"]=PREFIX+getB64image(path)
 
@@ -47,7 +47,7 @@ for document in cursor:
         for element in document["metinGovde"]:
             if len(element)==2:#resim demektir
                 resimURL=element["resim"]
-                if resimURL[0]=="h":#url ise
+                if resimURL is not None and resimURL[0]=="h":#url ise
                     path="./"+("/").join(resimURL.split("/")[3:])
                     element["resim"]=PREFIX+getB64image(path)
 
@@ -59,7 +59,7 @@ for document in cursor:
         for element in document["metinGovde"]:
             if len(element)==2:#resim demektir
                 resimURL=element["resim"]
-                if resimURL[0]=="h":#url ise
+                if resimURL is not None and resimURL[0]=="h":#url ise
                     path="./"+("/").join(resimURL.split("/")[3:])
                     element["resim"]=PREFIX+getB64image(path)
 
@@ -71,7 +71,7 @@ for document in cursor:
         for element in document["metinGovde"]:
             if len(element)==2:#resim demektir
                 resimURL=element["resim"]
-                if resimURL[0]=="h":#url ise
+                if resimURL is not None and resimURL[0]=="h":#url ise
                     path="./"+("/").join(resimURL.split("/")[3:])
                     element["resim"]=PREFIX+getB64image(path)
 
