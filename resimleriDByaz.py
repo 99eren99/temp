@@ -10,8 +10,8 @@ db = client["xyzswqss"]#dbname
 resimler=db["resimler"]
 
         
-for yearFolder in range(2017,2024):
-    for monthFolder in range(1,13):
+for yearFolder in reversed(range(2018,2024)):
+    for monthFolder in reversed(range(1,13)):
         try:
             images=os.listdir(f"./{yearFolder}/{monthFolder}/")
         except:
